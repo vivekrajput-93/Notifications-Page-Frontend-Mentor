@@ -1,0 +1,221 @@
+:root {
+
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+      
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    ---Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+    
+    
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    width: 100%;
+    margin: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 26rem;
+    margin: 2rem;
+}
+
+#btn-group .but {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--Very-dark-blue);
+    margin-top: 1rem;
+}
+
+ .note {
+    border: none;
+    margin-left: .8rem;
+    background-color: var(--Blue);
+    color: var(--White);
+    padding: 0.4rem 0.8rem 0.4rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#btn-group #mark {
+    border: none;
+    background-color: var(--White);
+    margin-top: 1rem;
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+.container {
+    width: 90%;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.blue {
+    background-color: var(---Light-grayish-blue-2);
+}
+
+.white {
+    background-color: var(--White);
+}
+
+.second {
+    background-color: var(--White);
+}
+
+
+.white2 {
+    background-color: var(--White);
+}
+
+.container .text {
+    display: flex;
+    gap: 1rem;
+}
+
+
+.container img {
+    position: relative;
+    top: 1rem;
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+}
+
+#dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--Red);
+    margin-top: 1.4rem;
+}
+
+.time {
+    margin-top: 0px;
+}
+
+.text p {
+    color: var(--Grayish-blue);
+}
+
+.name {
+    color: var(--Very-dark-blue);
+}
+
+.dot-view {
+    background-color: white;
+}
+
+.special {
+    width: 90%;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    
+}
+
+.special img {
+    position: relative;
+    top: .5rem;
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+}
+
+.special .text {
+    display: flex;
+    gap: 1rem;
+}
+
+.special .text .pixel {
+    font-size: 12px;
+}
+.special .time {
+    margin-bottom: 0;
+}
+
+.special .textarea {
+    border: 1px solid black;
+    margin-top: 0;
+    padding: .5rem;
+    font-size: 9px;
+}
+
+.chess .img {
+    position: relative;
+    left: 9rem;
+    top: 1rem;
+}
+
+.chess {
+    color: var(--Very-dark-blue);
+}
+
+@media screen and (max-width: 820px) {
+    .main-container {
+        width: 80%;
+        margin: 4rem;
+    }
+
+    #btn-group {
+        gap: 15rem;
+    }
+
+    .chess .img {
+        position: relative;
+        left: 5rem;
+        top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 675px) {
+    .main-container {
+        width: 80%;
+    }
+
+    .chess .img {
+        position: relative;
+        left: 0rem;
+        top: 1rem;
+    }
+
+    #dot {
+        margin-right: 2rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 590px) {
+    .main-container {
+        width: 80%;
+        margin-left: 4rem;
+    }
+
+    #btn-group {
+        gap: 8rem;
+    }
+
+    #dot {
+        margin-right: 10px;
+    }
+
+}
